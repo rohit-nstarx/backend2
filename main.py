@@ -9,12 +9,19 @@ from token_validation import validate_okta_jwt
 app = FastAPI()
 
 # Okta configuration
+"""
 OKTA_DOMAIN = "https://dev-21414807.okta.com"
 INTROSPECT_URL = f"{OKTA_DOMAIN}/oauth2/default/v1/introspect"
 CLIENT_ID = os.environ.get('CLIENT_ID')
 CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 AUDIENCE='api://default'
+"""
 
+OKTA_DOMAIN = "https://dev-21414807.okta.com"
+CLIENT_ID = '0oahu6yj0ySOUH1JN5d7'
+CLIENT_SECRET = 'dNRmSZJcitlpUmHCQ9ZSAkmjRvE3dlzqEGE0LVvqX4dMdklTevxVkDrUOyFBTKgb'
+# TOKEN_URL = f"{OKTA_DOMAIN}/oauth2/test/v1/token"
+AUDIENCE='api://test'
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
