@@ -15,7 +15,7 @@ def validate_okta_jwt(token, okta_domain, audience):
     - dict: The decoded token if valid.
     - None: If the token is invalid or expired.
     """
-    jwks_url = f'{okta_domain}/oauth2/default/v1/keys'
+    jwks_url = f'{okta_domain}/oauth2/ausi5gp94k3hmzYzo5d7/v1/keys'
 
     try:
         # Fetch the JWKS
